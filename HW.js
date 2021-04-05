@@ -40,12 +40,12 @@ console.log('-------------№3----------------');
 const sheetsInReamPaper = 500;
 const consumptionPerWeek = 1200;
 const weeksAmount = 8;
- amountOfPaper = (consumptionPerWeek * weeksAmount);
- numberOfPacks = (amountOfPaper  / sheetsInReamPaper);
- 
+amountOfPaper = (consumptionPerWeek * weeksAmount);
+numberOfPacks = (amountOfPaper / sheetsInReamPaper);
 
 
-console.log('Колличество пачек: ',numberOfPacks.toFixed(),);   
+
+console.log('Колличество пачек: ', numberOfPacks.toFixed(), );
 
 
 
@@ -55,7 +55,7 @@ console.log('-------------№4----------------');
 
 const roomsOnFloor = 3;
 const floors = 9;
-const roomNumber = 267;
+const roomNumber = 265;
 
 let porch;
 let floor;
@@ -65,7 +65,7 @@ function searchHouse(roomsOnFloor, floors, roomNumber) {
     porch = roomNumber / (floors * roomsOnFloor);
     
 
-    floor = (roomNumber % (floors * roomsOnFloor)) / roomsOnFloor;
+    floor = (roomNumber % (floors * roomsOnFloor)) / roomsOnFloor +1;
     
         console.log('квартира ',roomNumber,'находится в:',porch.toFixed(),'подъезде , на',floor.toFixed(),'этаже');
 
