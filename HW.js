@@ -55,23 +55,30 @@ console.log('-------------№4----------------');
 
 const roomsOnFloor = 3;
 const floors = 9;
-const roomNumber = 265;
+const roomNumber = 246;
 
 let porch;
 let floor;
 
 function searchHouse(roomsOnFloor, floors, roomNumber) {
 
-    porch = roomNumber / (floors * roomsOnFloor);
+    let roomsInPorch = floors * roomsOnFloor;
+
+    porch = roomNumber - (roomNumber % roomsInPorch);
+    porch = (porch / roomsInPorch)+1;
     
 
-    floor = (roomNumber % (floors * roomsOnFloor)) / roomsOnFloor +1;
-    
-        console.log('квартира ',roomNumber,'находится в:',porch.toFixed(),'подъезде , на',floor.toFixed(),'этаже');
+    floor = (roomNumber % roomsInPorch)-(roomNumber % roomsInPorch) % roomsOnFloor;
+    floor = (floor / roomsOnFloor)+1;
 
+
+    console.log('квартира ',roomNumber,'находится в:',porch,'подъезде , на',floor,'этаже');
+    
+    
 }
+searchHouse(roomsOnFloor, floors, roomNumber);
 
-searchHouse(roomsOnFloor, floors, roomNumber); 
+
 
 console.log('-------------№5----------------');
 
