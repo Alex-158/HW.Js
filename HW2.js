@@ -54,12 +54,24 @@ const namesOfDays = {
     en: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday',  'Sunday'],
 }
 
-function getNameOfDay(lang, day){
-    console.log(namesOfDays[lang][day - 1])
+//function getNameOfDay(lang, day){
+//    console.log(namesOfDays[lang][day - 1])
+//}
+function getNameOfDay(){
+    const lang = 'en';
+    const day = 7;
+    
+    console.log(namesOfDays[lang][day - 1]);
+}
+function getNameOfDay1(){
+    const lang = 'ru';
+    const day = 3;
+    
+    console.log(namesOfDays[lang][day - 1]);
 }
 
-getNameOfDay('en', 7) /// 'Sunday'
-getNameOfDay('ru', 3) /// 'Среда'
+getNameOfDay('en', 7) // 'Sunday'
+getNameOfDay1('ru', 3) //'Среда'
 
 console.log('-------------№4----------------');
 
