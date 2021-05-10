@@ -4,16 +4,105 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HW4</title>
+    <title>HW5</title>
+    <style>
+        body {
+            text-align: center;
+            background: #007aec;
+            font-family: sans-serif;
+            font-weight: 100;
+            color: #fff;
+            
+            }
+
+            .countdown-title {
+            color: #fff;
+            font-weight: 100;
+            font-size: 40px;
+            margin: 40px 0px 20px;
+            }
+            h2{
+            font-family: sans-serif;
+            color: #fff;
+            display: block;
+            font-weight: 700;
+            text-align: center;
+            font-size: 50px;
+            text-decoration: underline;
+
+            }
+
+            .countdown {
+            font-family: sans-serif;
+            color: #fff;
+            display: inline-block;
+            font-weight: 100;
+            text-align: center;
+            font-size: 30px;
+            }
+
+            .countdown-number {
+            padding: 10px;
+            border-radius: 10px;
+            background: #00bf96;
+            display: inline-block;
+            }
+
+            .countdown-time {
+            padding: 15px;
+            border-radius: 3px;
+            background: #012e4d;
+            display: inline-block;
+            }
+
+            .countdown-text {
+            display: block;
+            padding-top: 5px;
+            font-size: 16px;
+            }
+            .count-time{
+              height: 50px;
+              width: 50px;
+              background:#012e4d ;
+              color: #fff;
+              font-size: 30px;
+              text-align: center;
+
+            }
+    </style>
 </head>
 <body>
+  <h1 class="countdown-title">"Введите Желаемое время"</h1>
+  <div id="count" class="countdown">
+    <div class="countdown-number">
+      <input type="number" class="count-time" id="num"  value="5">
+      <span class="countdown-text">Минуты</span>
+    </div>
+    
+    <div>
+      <button class="btn">Добавить</button>
+    </div>
+    
+  </div>
+  
+
+    <h1 class="countdown-title">Обратный отсчёт</h1>
+<div id="countdown" class="countdown">
+  <div class="countdown-number">
+    <span class="minutes countdown-time"></span>
+    <span class="countdown-text">Минуты</span>
+  </div>
+  <div class="countdown-number">
+    <span class="seconds countdown-time"></span>
+    <span class="countdown-text">Секунды</span>
+  </div>
+</div>
  <!--<script src="HW.js"></script> 
  <script src="HW2.js"></script>-->
  <!-- <script src="employee.js"></script>
  <script src="HW3.js"></script>  --> 
- <script src="studentArr.js"></script>
- 
- <script src="HW4.js"></script>
- 
+ <!-- <script src="studentArr.js"></script>
+ <script src="HW4.js"></script> -->
+ <script src="Hw5.js"></script>
 </body>
 </html>
